@@ -39,7 +39,7 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false 
 
-- task: AzureRmWebAppDeployment@3
+- task: AzureRmWebAppDeployment@4
   inputs:
     azureSubscription: $(serviceConnectionToAzure)
     WebAppName: $(appName)
