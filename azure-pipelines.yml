@@ -5,7 +5,7 @@
 
 variables:
   serviceConnectionToAzure: connection-to-NodeJsAppName-rg
-  appName: NodeJsAppName 
+  appName: NodeJsLinux 
 
 trigger:
 - master 
