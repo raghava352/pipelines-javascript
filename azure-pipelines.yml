@@ -27,6 +27,13 @@ steps:
   
 - script: |
     echo 'Default directory is $(System.DefaultWorkingDirectory)'
+    echo $(Agent.OS)
+    echo $(Agent.Name)
+    echo $(Agent.WorkFolder)
+    echo $(Agent.HomeDirectory)
+    echo $(Build.ArtifactStagingDirectory)
+    echo $(Agent.MachineName)
+    echo $(Agent.Id)
   displayName: 'echo command' 
 
 - task: PublishTestResults@2
