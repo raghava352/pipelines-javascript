@@ -34,7 +34,7 @@ steps:
     echo $(Build.ArtifactStagingDirectory)
     echo $(Agent.MachineName)
     echo $(Agent.Id)
-  displayName: 'echo command' 
+  displayName: 'Agent Echo Commands' 
 
 - task: PublishTestResults@2
   inputs:
