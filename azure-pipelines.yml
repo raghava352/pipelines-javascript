@@ -24,6 +24,10 @@ steps:
     npm run build
     gulp
   displayName: 'npm install and build' 
+  
+- script: |
+    echo 'Default directory is $(System.DefaultWorkingDirectory)'
+  displayName: 'echo command' 
 
 - task: PublishTestResults@2
   inputs:
