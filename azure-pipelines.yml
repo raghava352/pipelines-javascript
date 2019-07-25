@@ -1,0 +1,12 @@
+trigger:
+- master 
+
+pool:
+  vmImage: 'ubuntu-latest' 
+
+steps:
+- task: Docker@2
+  displayName: 'Build an image'
+  inputs:
+    containerRegistry: ConnNodeDocContReg
+    repository: NodeLInuxRepo
